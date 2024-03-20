@@ -109,19 +109,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.1.2</version>
-				<configuration>
-					<!-- Configure test classes directory -->
-					<testClassesDirectory>${project.build.testOutputDirectory}</testClassesDirectory>
-					<!-- Configure test options -->
-					<argLine>-Xmx1024m</argLine>
-					<!-- Configure test reports -->
-					<reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
-				</configuration>
-			</plugin>
+			
 		</plugins>
 	</build>
 
